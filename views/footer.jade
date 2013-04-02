@@ -1,0 +1,23 @@
+
+div.container
+  p.pull-right
+    a(href='#') Back to top
+      
+  p
+    &copy; 2013 Raging Flame 
+    &middot;  
+    a(href='#') Privacy 
+    &middot; 
+    a(href='#') Terms
+    
+script(src="javascripts/jquery.js")
+script(src="javascripts/bootstrap-transition.js")
+script(src="javascripts/bootstrap-carousel.js")
+script(type="text/javascript")
+  (function ($) {
+    $(function(){
+      $('#myCarousel').carousel({
+        interval: 5000
+      });
+    })
+  }(window.jQuery));
