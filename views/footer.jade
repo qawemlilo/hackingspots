@@ -1,14 +1,21 @@
 
-div.container
-  p.pull-right
-    a(href='#') Back to top
-      
-  p
-    &copy; 2013 Raging Flame 
-    &middot;  
-    a(href='#') Privacy 
-    &middot; 
-    a(href='#') Terms
+footer
+  div.container    
+    p.more
+      a(href='#') 
+        strong About
+ 
+      a(href='#') 
+        strong Blog
+
+      a(href='#') 
+        strong FAQ
+    p
+      &copy; 2013 Raging Flame 
+      &middot;  
+      a(href='#') Privacy 
+      &middot; 
+      a(href='#') Terms
     
 script(src="javascripts/jquery.js")
 script(src="javascripts/bootstrap-transition.js")
@@ -17,7 +24,7 @@ script(type="text/javascript")
   (function ($) {
     $(function(){
       $('#myCarousel').carousel({
-        interval: 5000
+        interval: 10000
       });
     })
   }(window.jQuery));
