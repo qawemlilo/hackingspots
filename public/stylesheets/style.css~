@@ -93,7 +93,7 @@
 
     /* Carousel base class */
     .carousel {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     .carousel .container {
@@ -194,6 +194,10 @@
     -------------------------------------------------- */
 
     @media (max-width: 979px) {
+    
+      body {
+        background-color: #ffffff;
+      }
 
       .container.navbar-wrapper {
         margin-bottom: 0;

@@ -194,6 +194,10 @@
     -------------------------------------------------- */
 
     @media (max-width: 979px) {
+    
+      body {
+        background-color: #ffffff;
+      }
 
       .container.navbar-wrapper {
         margin-bottom: 0;
@@ -227,7 +231,11 @@
 
 
     @media (max-width: 767px) {
-
+    
+      body {
+        background-color: #ffffff;
+      }
+      
       .navbar-inner {
         margin: -20px;
       }
