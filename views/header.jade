@@ -3,7 +3,18 @@ header
   div.container
     div.row-fluid
       div.span6
-        div.input-prepend
-          span(class="add-on", style="background: #ffffff; border-right: 0px; border-right-style:none")
-            i.icon-search 
-          input(class="x-large", id="prependedInput", style="border-left: 0px; border-left-style:none", type="text", placeholder="Where do you want to go")
+        a(href='/', class='pull-left', style='margin-right: 20px;')
+          img(src='images/logo.png', alt='Hacking Spots Logo', Title='Hacking Spots')
+        form(class='form-inline', style='margin-top: 20px;')
+          input(type='text', style='padding: 10px; font-size: 24px; height:26px;', class='input-xlarge', placeholder='Enter a location...')
+      
+      div.span6
+        ul(class='nav nav-pills pull-right', style='margin-top: 30px;')
+          li
+            a(href='#') Register
+            
+          li
+            a(href='#') Login
+            
+          li
+            button(class='btn btn-danger', style='margin-left: 10px;') ADD A SPOT

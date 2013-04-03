@@ -5,11 +5,12 @@
 
     body {
       padding-bottom: 40px;
+      border-top: 5px solid #5a5a5a;
       color: #5a5a5a;
     }
     
     header {
-      padding: 20px 0px 15px 0px;
+      padding: 0px 0px 5px 0px;
     }
     
     div.carousel-caption h1 {
