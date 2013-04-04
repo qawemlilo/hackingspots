@@ -12,8 +12,12 @@
     
     header {
       padding: 0px 0px 5px 0px;
-      border-bottom: 2px solid #ccc8bb;
+      
     }
+    
+    ul.nav-pills a {
+      font-weight: bold;     
+    } 
     
 
     footer {
@@ -34,6 +38,10 @@
     
     footer p.more a {
       margin-right: 15px
+    }
+    
+    div#myCarousel {
+      border-top: 2px solid #ccc8bb;
     }
     
     div.carousel-caption h1 {
