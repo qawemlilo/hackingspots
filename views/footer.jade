@@ -21,11 +21,31 @@ script(src="javascripts/jquery.js")
 script(src="javascripts/bootstrap-transition.js")
 script(src="javascripts/bootstrap-carousel.js")
 script(src="javascripts/holder.js")
+script(src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places")
+script(src="javascripts/jquery.geocomplete.min.js")
 script(type="text/javascript")
-  (function ($) {
-    $(function(){
-      $('#myCarousel').carousel({
-        interval: 10000
-      });
+  $('#main-search')
+    .geocomplete({
+        componentRestrictions: {country: 'za'},
+        details: 'ul',
+        detailsAttribute: 'data-geo'
     })
-  }(window.jQuery));
+    .bind("geocode:result", function(event, result) {
+        $('#main-search').val(result.formatted_address);
+    });
+    
+  $('#main-search').on('focus', function() {
+      if($('#main-search').val()) {
+          $('#main-search').val('');
+      }
+  });
+
+if(page == 'index')
+  script(type="text/javascript")
+    (function ($) {
+      $(function(){
+        $('#myCarousel').carousel({
+          interval: 10000
+        });
+      })
+    }(window.jQuery));

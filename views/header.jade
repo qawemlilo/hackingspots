@@ -1,28 +1,27 @@
 
 header
-  div.container
-    div.row-fluid
-      div.span6
-        a(href='/', class='pull-left', style='margin-right: 20px;')
-          img(src='images/logo.png', alt='Hacking Spots Logo', Title='Hacking Spots')
-        form(class='form-inline', style='margin-top: 16px;')
-          input(type='text', style='padding: 10px; font-size: 24px; margin-right: 2px; height:26px;', class='input-xlarge', placeholder='Enter a location...')  
-          button(class='btn btn-large btn-success', style='padding: 12px 15px 12px 15px;')
-            i(class='icon-search icon-white')
+  div.row-fluid
+    div.span7
+      a(href='/', class='pull-left', style='margin-right: 5px; margin-right: 20px;')
+        img(src='images/logo.png', alt='Hacking Spots Logo', Title='Hacking Spots')
+      form(class='form-inline', style='margin-top: 16px;')
+        input(type='text', id='main-search', style='padding: 10px; font-size: 20px; margin-right: 2px; width:400px; height:24px;', class='input-xlarge', placeholder='Enter a location...')  
+        button(class='btn btn-large btn-success', style='padding: 11px 15px 11px 15px;')
+          i(class='icon-search icon-white')
       
-      div.span6
-        ul(class='nav nav-pills pull-right', style='margin-top: 30px;')
-          li
-            a(href='#') Community
+    div.span5
+      ul(class='nav nav-pills pull-right', style='margin-top: 25px; margin-right: 10px;')
+        li
+          a(href='#') Community
                        
-          li
-            a(href='#') Photos
+        li
+          a(href='#') Photos
             
-          li
-            a(href='#') Register
+        li
+          a(href='#') Register
             
-          li
-            a(href='#') Login
+        li
+          a(href='#') Login
             
-          li
-            button(class='btn btn-danger', style='margin-left: 10px;') ADD A SPOT
+        li
+          button(class='btn btn-danger', style='margin-left: 10px;') ADD A SPOT

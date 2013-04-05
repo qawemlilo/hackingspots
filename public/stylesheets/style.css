@@ -10,9 +10,14 @@
       color: #5a5a5a;
     }
     
+    div.main-container {
+      background: #fff;
+      width: 100%;
+    }
+    
     header {
       padding: 0px 0px 5px 0px;
-      
+      border-bottom: 2px solid #ccc8bb; 
     }
     
     ul.nav-pills a {
@@ -39,10 +44,10 @@
     footer p.more a {
       margin-right: 15px
     }
-    
+    /*
     div#myCarousel {
       border-top: 2px solid #ccc8bb;
-    }
+    }*/
     
     div.carousel-caption h1 {
       font-size: 42px;
@@ -285,5 +290,14 @@
         font-size: 18px;
         line-height: 1.5;
       }
+      
+    footer {
+      background-color: #fff;
+      color: #5a5a5a;
+    }
+    
+    footer a, footer a:hover {
+      color: #5a5a5a;
+    }
 
     }

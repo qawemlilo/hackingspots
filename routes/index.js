@@ -1,8 +1,9 @@
-
 /*
- * GET home page.
- */
+    Routes setup  
+*/
+exports.setup = function (params) {
+    var app = params.app, controllers = params.controllers;
 
-exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+    // Generic Routes
+    app.get('/', controllers.index); 
 };
