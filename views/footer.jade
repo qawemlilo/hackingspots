@@ -26,12 +26,11 @@ script(src="javascripts/jquery.geocomplete.min.js")
 script(type="text/javascript")
   $('#main-search')
     .geocomplete({
-        componentRestrictions: {country: 'za'},
-        details: 'ul',
-        detailsAttribute: 'data-geo'
+        details: '#spots-search',
+        componentRestrictions: {country: 'za'}
     })
     .bind("geocode:result", function(event, result) {
-        $('#main-search').val(result.formatted_address);
+        $('#spots-search').submit();
     });
     
   $('#main-search').on('focus', function() {
@@ -39,6 +38,17 @@ script(type="text/javascript")
           $('#main-search').val('');
       }
   });
+  
+  
+  if ($('.view-map').length) {
+      (function () {
+          $('#map-add').geocomplete({
+            map: '#map-cont'
+          });
+          $('#main-search').val($('#map-add').val());          
+          $('#map-add').trigger('geocode');    
+      }());
+  };
 
 if(page == 'index')
   script(type="text/javascript")
